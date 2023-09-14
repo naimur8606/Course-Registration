@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Course = ({course}) => {
+const Course = ({course, cartControl}) => {
     const {cover, title, credit, description, price} = course;
     return (
         <div className='p-4 bg-[#FFFF] rounded-lg space-y-2'>
@@ -17,7 +17,7 @@ const Course = ({course}) => {
                     <p className='text-[18px] text-[#999898]'>Credit: {credit}hr</p>
                 </div>
             </div>
-            <button className='bg-[#2F80ED] text-white text-xl font-semibold w-full rounded-lg py-2'>Select</button>
+            <button onClick={()=> cartControl(course)} className='bg-[#2F80ED] text-white text-xl font-semibold w-full rounded-lg py-2'>Select</button>
         </div>
     );
 };
