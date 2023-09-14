@@ -1,0 +1,75 @@
+[
+    {
+      "id":1,
+      "cover": "https://i.ibb.co/chf7Tbp/course-1663052056.jpg",
+      "title": "Web development course",
+      "description": "Master the basics of web development with hands-on projects and real-world examples.",
+      "price": "15000",
+      "credit": 3
+    },
+    {
+      "id":2,
+      "cover": "https://i.ibb.co/T0mwXyf/5442226-3d1b.jpg",
+      "title": "JavaScript mastery course",
+      "description": "Become an expert in JavaScript with interactive exercises and practical projects.",
+      "price": "18000",
+      "credit": 4
+    },
+    {
+        "id":3,
+        "cover": "https://i.ibb.co/RNY6msF/What-makes-Java-still-popular-among-developers.webp",
+        "title": "Java programming course",
+        "description": "Become proficient in Java programming through hands-on projects and coding tasks.",
+        "price": "18000",
+        "credit": 4
+    },
+    {
+      "id":4,
+      "cover": "https://i.ibb.co/K2FsgBq/589f9d39-6f4e-451f-8b3b-de0ded6cca44.jpg",
+      "title": "Building web applications with React.js",
+      "description": "Learn to create web apps using React.js through real-world examples and projects.",
+      "price": "20000",
+      "credit": 4
+    },
+    {
+      "id":5,
+      "cover": "https://i.ibb.co/PWsLTwZ/When-to-Consider-Using-Node-js-0d84032172.jpg",
+      "title": "Server-side JavaScript with Node.js",
+      "description": "Explore server-side JavaScript with Node.js and build scalable applications.",
+      "price": "16000",
+      "credit": 3
+    },
+    {
+      "id":6,
+      "cover": "https://i.ibb.co/CKdGxMn/Data-Structures-In-Java.jpg",
+      "title": "In-depth data structures & algorithms course",
+      "description": "Master fundamental data structures and algorithms with practical coding challenges.",
+      "price": "25000",
+      "credit": 5
+    },
+    {
+        "id":7,
+        "cover": "https://i.ibb.co/ngn26Fp/FREE-Python-Course-For-Beginners.png",
+        "title": "Python programming for beginners",
+        "description": "Start your Python journey with easy-to-follow lessons and coding exercises.",
+        "price": "12000",
+        "credit": 3
+    },
+    {
+      "id":8,
+      "cover": "https://i.ibb.co/nnGRZtX/2425200-1806-3.jpg",
+      "title": "Learn C# for game development",
+      "description": "Develop your own games using C# and gain practical game development skills.",
+      "price": "22000",
+      "credit": 4
+    },
+    {
+      "id":9,
+      "cover": "https://i.ibb.co/YZbzZLK/python-ml-header.png",
+      "title": "Exploring machine learning with Python",
+      "description": "Dive into machine learning concepts using Python with practical exercises and projects.",
+      "price": "21000",
+      "credit": 5
+    }
+  ]
+  
