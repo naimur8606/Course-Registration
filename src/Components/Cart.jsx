@@ -7,11 +7,13 @@ const Cart = ({creditRemaining, creditHour, price, markCourses}) => {
             ${creditRemaining} hr
              </h4>
             <h3 className='text-xl font-bold'>Course Name</h3>
-            <ul className='border-b-2'>
-                <li>1. Introduction to c programming</li>
+            <ul className='border-b-2 pb-5 list-decimal list-inside'>
+                {
+                    markCourses.map( course => <li className='text-[#999898]'>{course.title}</li>)
+                }
             </ul>
-            <p className='border-b-2'>Total Credit Hour : {creditHour}</p>
-            <p>Total Price : {price} USD</p>
+            <p className='border-b-2 text-[#494949] font-semibold'>Total Credit Hour : {creditHour}</p>
+            <p className='text-[#494949] font-semibold'>Total Price : {price} USD</p>
         </div>
     );
 };

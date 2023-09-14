@@ -18,11 +18,22 @@ function App() {
     const presentCreditRemaining = creditRemaining-course.credit;
     const presentCreditHour = creditHour+course.credit;
     const presentPrice = price+course.price;
-    setCreditRemaining(presentCreditRemaining)
-    setCreditHour(presentCreditHour)
-    setPrice(presentPrice)
+    const askMarkCourse = markCourses.find( item => item.id === course.id)
+    if(askMarkCourse){
+      return alert("You have already selected it")
+    }
+    else{
+      if(presentCreditHour > 20 || presentCreditRemaining < 0){
+        return alert("You cannot take over $20 hr. Please select another to complete the 20 hr")
+      }
+      else{
+        setMarkCourses([...markCourses,course])
+        setCreditHour(presentCreditHour)
+        setCreditRemaining(presentCreditRemaining)
+        setPrice(presentPrice)
+      }
+    }
   }
-  
   return (
     <div className='w-11/12 mx-auto'>
       <h1 className='text-4xl my-10 text-center font-bold'>Course Registration</h1>
