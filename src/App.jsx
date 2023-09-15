@@ -2,6 +2,8 @@ import { useEffect, useState } from 'react'
 import './App.css'
 import Cart from './components/Cart'
 import Course from './components/Course'
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
   const [courses, setCourses] = useState([])
@@ -20,11 +22,29 @@ function App() {
     const presentPrice = price+course.price;
     const askMarkCourse = markCourses.find( item => item.id === course.id)
     if(askMarkCourse){
-      return alert("You have already selected it")
+      toast.error(' You have already selected it !', {
+        position: "top-center",
+        autoClose: 3000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "light",
+        });
     }
     else{
       if(presentCreditHour > 20 || presentCreditRemaining < 0){
-        return alert("You cannot take over $20 hr. Please select another to complete the 20 hr")
+        toast.error('You can not take over 20 hr credit !', {
+          position: "top-center",
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: "light",
+          });
       }
       else{
         setMarkCourses([...markCourses,course])
@@ -52,6 +72,7 @@ function App() {
           ></Cart>
         </div>
       </div>
+      <ToastContainer />
     </div>
   )
 }

@@ -1,15 +1,3 @@
-# React + Vite
-
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-
-
-
 
 Question-1: Add at least 3 Project features
 
@@ -17,6 +5,8 @@ Answer:
     1. Credit Limit Tracking: You can take max 20 hr credit.
     2. Selection system: You can not select a course two time.
     3. Course Name: You can see what courses you have selected.
+    4. Alert System: If you select above 20 credits or a course twice, you will get a toast alert.
+
 
 
 Question-2: Discuss how you managed the state in your assignment project.
